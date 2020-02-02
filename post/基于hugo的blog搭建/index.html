@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="Junliu" /><meta name="description" content="Before the beginning 最开始的时候，网站采用hexo搭建。但是在使用过程中出现了这样的问题 每次Hexo编译的时间过长，本来改动特别小（可能只有一篇文章的一点" /><meta name="keywords" content="Junliu, blog" />
+<meta name="author" content="Junliu" /><meta name="description" content="Before the beginning 最开始的时候，网站采用hexo搭建。但是在使用过程中出现了以下的问题 每次Hexo编译的时间过长，本来改动特别小（可能只有一篇文章的一点" /><meta name="keywords" content="Junliu, blog" />
 
 
 
@@ -39,26 +39,26 @@
 
 
 <meta property="og:title" content="基于Hugo的Blog搭建" />
-<meta property="og:description" content="Before the beginning 最开始的时候，网站采用hexo搭建。但是在使用过程中出现了这样的问题 每次Hexo编译的时间过长，本来改动特别小（可能只有一篇文章的一点" />
+<meta property="og:description" content="Before the beginning 最开始的时候，网站采用hexo搭建。但是在使用过程中出现了以下的问题 每次Hexo编译的时间过长，本来改动特别小（可能只有一篇文章的一点" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://Suwenjunliu.github.io/post/%E5%9F%BA%E4%BA%8Ehugo%E7%9A%84blog%E6%90%AD%E5%BB%BA/" />
 <meta property="article:published_time" content="2020-02-02T09:42:00&#43;08:00"/>
 <meta property="article:modified_time" content="2020-02-02T09:42:00&#43;08:00"/>
 
 <meta itemprop="name" content="基于Hugo的Blog搭建">
-<meta itemprop="description" content="Before the beginning 最开始的时候，网站采用hexo搭建。但是在使用过程中出现了这样的问题 每次Hexo编译的时间过长，本来改动特别小（可能只有一篇文章的一点">
+<meta itemprop="description" content="Before the beginning 最开始的时候，网站采用hexo搭建。但是在使用过程中出现了以下的问题 每次Hexo编译的时间过长，本来改动特别小（可能只有一篇文章的一点">
 
 
 <meta itemprop="datePublished" content="2020-02-02T09:42:00&#43;08:00" />
 <meta itemprop="dateModified" content="2020-02-02T09:42:00&#43;08:00" />
-<meta itemprop="wordCount" content="820">
+<meta itemprop="wordCount" content="1086">
 
 
 
 <meta itemprop="keywords" content="Markdown,Blog设计,Blog搭建,Hugo," />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="基于Hugo的Blog搭建"/>
-<meta name="twitter:description" content="Before the beginning 最开始的时候，网站采用hexo搭建。但是在使用过程中出现了这样的问题 每次Hexo编译的时间过长，本来改动特别小（可能只有一篇文章的一点"/>
+<meta name="twitter:description" content="Before the beginning 最开始的时候，网站采用hexo搭建。但是在使用过程中出现了以下的问题 每次Hexo编译的时间过长，本来改动特别小（可能只有一篇文章的一点"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -144,8 +144,8 @@
         <div class="post-category">
             <a href="/categories/blog%E6%90%AD%E5%BB%BA/"> Blog搭建 </a>
             </div>
-          <span class="more-meta"> 约 820 字 </span>
-          <span class="more-meta"> 预计阅读 2 分钟 </span>
+          <span class="more-meta"> 约 1086 字 </span>
+          <span class="more-meta"> 预计阅读 3 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
     </header>
@@ -164,6 +164,7 @@
 <li><a href="#关于该hugo主题下的一些tips">关于该Hugo主题下的一些Tips</a>
 <ul>
 <li><a href="#增加导航菜单按钮">增加导航菜单按钮</a></li>
+<li><a href="#bat脚本进行推送">Bat脚本进行推送</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -174,7 +175,7 @@
 
 <h1 id="before-the-beginning">Before the beginning</h1>
 
-<p>最开始的时候，网站采用hexo搭建。但是在使用过程中出现了这样的问题</p>
+<p>最开始的时候，网站采用hexo搭建。但是在使用过程中出现了以下的问题</p>
 
 <ul>
 <li>每次<a href="https://hexo.io/">Hexo</a>编译的时间过长，本来改动特别小（可能只有一篇文章的一点东西改动）就要重新生成和部署一次，等待的时间从20秒到2分钟不等,但是<a href="https://gohugo.io/">Hugo</a>编译的速度就要比Hexo快很多。</li>
@@ -231,10 +232,73 @@ Hugo Static Site Generator v0.55.6-A5D4C82D windows/amd64 BuildDate: 2019-05-18T
 
 <p>该Blog选择了Even主题，可以参考<a href="https://github.com/olOwOlo/hugo-theme-even/blob/master/README-zh.md">Even-Hugo</a>进行安装。</p>
 
+<p>编译安装之后，一般需要修改config.toml以便进行个性化</p>
+
 <h1 id="关于该hugo主题下的一些tips">关于该Hugo主题下的一些Tips</h1>
 
 <h2 id="增加导航菜单按钮">增加导航菜单按钮</h2>
 
+<p>若想增加导航菜单，可以修改config.toml</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">[[menu.main]]             # config your menu              # 配置目录
+  name = &#34;Home&#34;
+  weight = 10
+  identifier = &#34;home&#34;
+  url = &#34;/&#34;</pre></td></tr></table>
+</div>
+</div>
+<p>配置相应的menu。例如，我想添加pdfArchives标签页，那么只需要在这段后边添加</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">[[menu.main]]
+  name = &#34;PdfArchives&#34;
+  weight = 50
+  identifier = &#34;pdfArchives&#34;  
+  url = &#34;/pdfArchives/&#34;</pre></td></tr></table>
+</div>
+</div>
+<p>即可，其中weight指的是排序的权重。这个数字越小，就会在整个菜单栏中排越前边。</p>
+
+<h2 id="bat脚本进行推送">Bat脚本进行推送</h2>
+
+<p>如果利用git，可以较为轻松的实现一键部署。此Blog采用的bat脚本如下</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">hugo --theme=even --baseUrl=&#34;https://Suwenjunliu.github.io/&#34;
+cd E:\blog\hugo-blog\junliusw.cn\public
+git init
+git remote add origin https://github.com/Suwenjunliu/Suwenjunliu.github.io.git
+git add -A
+git commit -m &#34;commit&#34;
+git push -u origin master -f
+cd E:\blog\hugo-blog\junliusw.cn</pre></td></tr></table>
+</div>
+</div>
     </div>
 
     <div class="post-copyright">
