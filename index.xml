@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>JunliuBlog - Junliu的个人记录站点</title>
@@ -68,15 +68,6 @@
     
     <item>
       <title>about</title>
-      <link>https://Suwenjunliu.github.io/acgn/</link>
-      <pubDate>Tue, 08 Jan 2019 15:35:57 +0000</pubDate>
-      
-      <guid>https://Suwenjunliu.github.io/acgn/</guid>
-      <description>关于Junliu test</description>
-    </item>
-    
-    <item>
-      <title>about</title>
       <link>https://Suwenjunliu.github.io/about/</link>
       <pubDate>Tue, 08 Jan 2019 15:35:57 +0000</pubDate>
       
@@ -86,11 +77,20 @@
     
     <item>
       <title>about</title>
+      <link>https://Suwenjunliu.github.io/acgn/</link>
+      <pubDate>Tue, 08 Jan 2019 15:35:57 +0000</pubDate>
+      
+      <guid>https://Suwenjunliu.github.io/acgn/</guid>
+      <description>关于Junliu test</description>
+    </item>
+    
+    <item>
+      <title>about</title>
       <link>https://Suwenjunliu.github.io/codeindex/</link>
       <pubDate>Tue, 08 Jan 2019 15:35:57 +0000</pubDate>
       
       <guid>https://Suwenjunliu.github.io/codeindex/</guid>
-      <description>关于Junliu Junliu，喜欢卖萌的未知生物，来自一座南方小城 ↓以下是这只猫的教育经历 &amp;gt; 2011~2014 Nanning No.2 Middle School 2014~2018 Jilin Univ. Geophyshics 2018~ IGGCAS 关于Blog 原计划是写关于</description>
+      <description>关于Junliu Junliu，喜欢卖萌的未知生物，来自一座南方小城 ↓以下是这只猫的教育经历 2011~2014 Nanning No.2 Middle School 2014~2018 Jilin Univ. Geophyshics 2018~ IGGCAS 关于Blog 原计划是写关于学</description>
     </item>
     
     <item>
