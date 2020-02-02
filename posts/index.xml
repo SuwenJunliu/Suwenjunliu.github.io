@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>JunliuBlog - Junliu的个人记录站点</title>
-    <link>https://Suwenjunliu.github.io/</link>
-    <description>Recent content on JunliuBlog - Junliu的个人记录站点</description>
+    <title>Posts on JunliuBlog - Junliu的个人记录站点</title>
+    <link>https://Suwenjunliu.github.io/posts/</link>
+    <description>Recent content in Posts on JunliuBlog - Junliu的个人记录站点</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Junliu</copyright>
     <lastBuildDate>Sun, 02 Feb 2020 09:42:00 +0800</lastBuildDate>
     
-	<atom:link href="https://Suwenjunliu.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://Suwenjunliu.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -64,51 +64,6 @@
       
       <guid>https://Suwenjunliu.github.io/posts/2018summary/</guid>
       <description>before the beginning 这篇文章是迟到的一片年末总结。 其实也没有太多可以说的东西，见到大家都在微信/空间里头发自己的年末总结。最开始打算是在空间写这些东西，但</description>
-    </item>
-    
-    <item>
-      <title>about</title>
-      <link>https://Suwenjunliu.github.io/about/</link>
-      <pubDate>Tue, 08 Jan 2019 15:35:57 +0000</pubDate>
-      
-      <guid>https://Suwenjunliu.github.io/about/</guid>
-      <description>关于Junliu Junliu，喜欢卖萌的未知生物，来自一座南方小城 ↓以下是这只猫的教育经历 2011~2014 Nanning No.2 Middle School 2014~2018 Jilin Univ. Geophyshics 2018~Now IGGCAS 关于Blog 原计划是写关于学</description>
-    </item>
-    
-    <item>
-      <title>about</title>
-      <link>https://Suwenjunliu.github.io/acgn/</link>
-      <pubDate>Tue, 08 Jan 2019 15:35:57 +0000</pubDate>
-      
-      <guid>https://Suwenjunliu.github.io/acgn/</guid>
-      <description>关于Junliu test</description>
-    </item>
-    
-    <item>
-      <title>about</title>
-      <link>https://Suwenjunliu.github.io/codeindex/</link>
-      <pubDate>Tue, 08 Jan 2019 15:35:57 +0000</pubDate>
-      
-      <guid>https://Suwenjunliu.github.io/codeindex/</guid>
-      <description>关于Junliu Junliu，喜欢卖萌的未知生物，来自一座南方小城 ↓以下是这只猫的教育经历 2011~2014 Nanning No.2 Middle School 2014~2018 Jilin Univ. Geophyshics 2018~ IGGCAS 关于Blog 原计划是写关于学</description>
-    </item>
-    
-    <item>
-      <title>dddd</title>
-      <link>https://Suwenjunliu.github.io/acgn/sometest/</link>
-      <pubDate>Tue, 08 Jan 2019 15:35:57 +0000</pubDate>
-      
-      <guid>https://Suwenjunliu.github.io/acgn/sometest/</guid>
-      <description>关于Junliu qqqq</description>
-    </item>
-    
-    <item>
-      <title>pdfArchives</title>
-      <link>https://Suwenjunliu.github.io/pdfarchives/</link>
-      <pubDate>Tue, 08 Jan 2019 15:35:57 +0000</pubDate>
-      
-      <guid>https://Suwenjunliu.github.io/pdfarchives/</guid>
-      <description>关于pdfArchives 这里主要存放一些已经整理成为pdf的文档。主要含有： 在大学/研究生期间写的大作业报告 已经发表的论文 其他一些不适合以</description>
     </item>
     
     <item>
