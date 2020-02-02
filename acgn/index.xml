@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ACGNs on JunliuBlog - Junliu的个人记录站点</title>
+    <link>https://Suwenjunliu.github.io/acgn/</link>
+    <description>Recent content in ACGNs on JunliuBlog - Junliu的个人记录站点</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Junliu</copyright>
+    <lastBuildDate>Tue, 08 Jan 2019 15:35:57 +0000</lastBuildDate>
+    
+	<atom:link href="https://Suwenjunliu.github.io/acgn/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>about</title>
+      <link>https://Suwenjunliu.github.io/acgn/sometest/</link>
+      <pubDate>Tue, 08 Jan 2019 15:35:57 +0000</pubDate>
+      
+      <guid>https://Suwenjunliu.github.io/acgn/sometest/</guid>
+      <description>关于Junliu Junliu，喜欢卖萌的未知生物，来自一座南方小城 ↓以下是这只猫的教育经历 &amp;gt; 2011~2014 Nanning No.2 Middle School 2014~2018 Jilin Univ. Geophyshics 2018~ IGGCAS 关于Blog 原计划是写关于</description>
+    </item>
+    
+  </channel>
+</rss>
