@@ -10,6 +10,7 @@
 # Hugo的安装和使用
 
 ## Windows版本
+
 与Hexo类似，需要安装Hugo。
 
 Hugo可以在Hugo的Github [Releases](https://github.com/gohugoio/hugo/releases)中找到。截至2020年2月2日，最新的版本是V0.63。[hugo_0.63.2_Windows-64bit.zip
@@ -45,5 +46,7 @@ Hugo Static Site Generator v0.55.6-A5D4C82D windows/amd64 BuildDate: 2019-05-18T
 
 那么证明Hugo已经安装完成，可以正常使用。
 
-## 主题的挑选和下载
+# 主题的挑选和下载
+该Blog选择了Even主题，可以参考[Even-Hugo](https://github.com/olOwOlo/hugo-theme-even/blob/master/README-zh.md)进行安装。
 
+# 
