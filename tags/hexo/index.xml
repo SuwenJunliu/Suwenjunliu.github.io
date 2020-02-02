@@ -14,10 +14,10 @@
     
     <item>
       <title>Hello World</title>
-      <link>https://Suwenjunliu.github.io/posts/hello/</link>
+      <link>https://Suwenjunliu.github.io/post/hello/</link>
       <pubDate>Tue, 08 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://Suwenjunliu.github.io/posts/hello/</guid>
+      <guid>https://Suwenjunliu.github.io/post/hello/</guid>
       <description>请注意！请注意！！ 现在整个Blog已经从Hexo转到Hugo了，这篇文章主要是利用Hexo做的，因此对本博客已经没有太多参考意义！ 保留此文仅</description>
     </item>
     
