@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>日志 on JunliuBlog - Junliu的个人记录站点</title>
+    <link>https://Suwenjunliu.github.io/categories/%E6%97%A5%E5%BF%97/</link>
+    <description>Recent content in 日志 on JunliuBlog - Junliu的个人记录站点</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Junliu</copyright>
+    <lastBuildDate>Fri, 15 Feb 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://Suwenjunliu.github.io/categories/%E6%97%A5%E5%BF%97/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>放假随笔</title>
+      <link>https://Suwenjunliu.github.io/post/%E6%94%BE%E5%81%87%E9%9A%8F%E7%AC%94/</link>
+      <pubDate>Fri, 15 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://Suwenjunliu.github.io/post/%E6%94%BE%E5%81%87%E9%9A%8F%E7%AC%94/</guid>
+      <description>假期 这是放假以来我的第一篇blog。 相对于暑假，其实我是更喜欢寒假的。第一个原因，就是寒假有春节。 虽然这句话听起来很傻，但是对于现在的我而言</description>
+    </item>
+    
+    <item>
+      <title>2018summary</title>
+      <link>https://Suwenjunliu.github.io/post/2018summary/</link>
+      <pubDate>Wed, 09 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://Suwenjunliu.github.io/post/2018summary/</guid>
+      <description>before the beginning 这篇文章是迟到的一片年末总结。 其实也没有太多可以说的东西，见到大家都在微信/空间里头发自己的年末总结。最开始打算是在空间写这些东西，但</description>
+    </item>
+    
+  </channel>
+</rss>

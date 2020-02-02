@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>书籍 on JunliuBlog - Junliu的个人记录站点</title>
+    <link>https://Suwenjunliu.github.io/tags/%E4%B9%A6%E7%B1%8D/</link>
+    <description>Recent content in 书籍 on JunliuBlog - Junliu的个人记录站点</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Junliu</copyright>
+    <lastBuildDate>Tue, 02 Jul 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://Suwenjunliu.github.io/tags/%E4%B9%A6%E7%B1%8D/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>读后感系列-人人都在说慌</title>
+      <link>https://Suwenjunliu.github.io/post/%E8%AF%BB%E5%90%8E%E6%84%9F%E7%B3%BB%E5%88%97-%E4%BA%BA%E4%BA%BA%E9%83%BD%E5%9C%A8%E8%AF%B4%E6%85%8C/</link>
+      <pubDate>Tue, 02 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://Suwenjunliu.github.io/post/%E8%AF%BB%E5%90%8E%E6%84%9F%E7%B3%BB%E5%88%97-%E4%BA%BA%E4%BA%BA%E9%83%BD%E5%9C%A8%E8%AF%B4%E6%85%8C/</guid>
+      <description>前言 本文为《人人都在说慌》一书的读后感。虽然阅读的过程有些仓促，但是这是目前我在研究生阶段阅读完的第一本书。最开始接触到这本书是来源于国科大</description>
+    </item>
+    
+  </channel>
+</rss>

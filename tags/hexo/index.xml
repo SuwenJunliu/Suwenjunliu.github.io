@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>hexo on JunliuBlog - Junliu的个人记录站点</title>
+    <link>https://Suwenjunliu.github.io/tags/hexo/</link>
+    <description>Recent content in hexo on JunliuBlog - Junliu的个人记录站点</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Junliu</copyright>
+    <lastBuildDate>Tue, 08 Jan 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://Suwenjunliu.github.io/tags/hexo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hello World</title>
+      <link>https://Suwenjunliu.github.io/post/hello/</link>
+      <pubDate>Tue, 08 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://Suwenjunliu.github.io/post/hello/</guid>
+      <description>请注意！请注意！！ 现在整个Blog已经从Hexo转到Hugo了，这篇文章主要是利用Hexo做的，因此对本博客已经没有太多参考意义！ 保留此文仅</description>
+    </item>
+    
+  </channel>
+</rss>
