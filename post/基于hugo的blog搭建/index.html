@@ -48,7 +48,7 @@
 <meta itemprop="description" content="Before the beginning 最开始的时候，网站采用hexo搭建。但是在使用过程中出现了这样的问题 每次Hexo编译的时间过长，本来改动特别小（可能只有一篇文章的一点">
 <meta itemprop="datePublished" content="2020-02-02T09:42:00&#43;08:00" />
 <meta itemprop="dateModified" content="2020-02-02T09:42:00&#43;08:00" />
-<meta itemprop="wordCount" content="366">
+<meta itemprop="wordCount" content="737">
 
 
 
@@ -140,8 +140,8 @@
         <div class="post-category">
             <a href="/categories/blog%E6%90%AD%E5%BB%BA/"> Blog搭建 </a>
             </div>
-          <span class="more-meta"> 约 366 字 </span>
-          <span class="more-meta"> 预计阅读 1 分钟 </span>
+          <span class="more-meta"> 约 737 字 </span>
+          <span class="more-meta"> 预计阅读 2 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
     </header>
@@ -167,10 +167,34 @@
 <h1 id="hugo的安装和使用">Hugo的安装和使用</h1>
 <h2 id="windows版本">Windows版本</h2>
 <p>与Hexo类似，需要安装Hugo。</p>
-<p>Hugo可以在Hugo的Github <a href="https://github.com/gohugoio/hugo/releases">Releases</a>中找到。截至2020年2月2日，最新的版本是V0.63。因为我目前写blog主要在Win环境下进行，所以选择下载<a href="https://github.com/gohugoio/hugo/releases/download/v0.63.2/hugo_extended_0.63.2_Windows-64bit.zip">hugo_extended_0.63.2_Windows-64bit.zip
-</a></p>
-<p>下载解压后，</p>
-
+<p>Hugo可以在Hugo的Github <a href="https://github.com/gohugoio/hugo/releases">Releases</a>中找到。截至2020年2月2日，最新的版本是V0.63。因为我目前写blog主要在Win环境下进行，所以选择下载<a href="https://github.com/gohugoio/hugo/releases">hugo_0.63.2_Windows-64bit.zip
+</a>。</p>
+<!-- raw HTML omitted -->
+<p>有趣的是，这个Blog采用的Even主题，如果用了hugo_extended_0.63.2_Windows-64bit.zip，就会让我的主页丢失。我不太确定是什么引起的，如果不是extended版本似乎就不会这样。所以建议不要使用extended。除非你能确定你的主题和它兼容</p>
+<!-- raw HTML omitted -->
+<p>下载解压后，可以发现里面只有一个hugo.exe文件。请将它解压到一个非中文目录下。例如：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback">E:\blog\hugo
+</code></pre></td></tr></table>
+</div>
+</div><p>接着，将这个路径添加到系统环境变量中。在Win10下，可以选择：</p>
+<ol>
+<li>对开始菜单右键，选择设置</li>
+<li>在打开的windows设置中，在“查找设置”对话框中输入“编辑系统环境变量”</li>
+<li>在打开的系统属性中，点击环境变量，在系统变量中找到“Path”，点击编辑。在弹出的“编辑环境变量”中，加入hugo.exe所在的目录。在本例中，为“E:\blog\hugo”（不包括引号内容）</li>
+</ol>
+<p>如果已经成功添加环境变量，打开cmd，输入</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-fallback" data-lang="fallback"></code></pre></td></tr></table>
+</div>
+</div>
     </div>
 
     <div class="post-copyright">
