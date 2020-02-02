@@ -49,4 +49,6 @@ Hugo Static Site Generator v0.55.6-A5D4C82D windows/amd64 BuildDate: 2019-05-18T
 # 主题的挑选和下载
 该Blog选择了Even主题，可以参考[Even-Hugo](https://github.com/olOwOlo/hugo-theme-even/blob/master/README-zh.md)进行安装。
 
-# 
+# 关于该Hugo主题下的一些Tips
+## 增加导航菜单按钮
+
