@@ -2,13 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://Suwenjunliu.github.io/tags/blog%E6%90%AD%E5%BB%BA/</loc>
+    <loc>https://Suwenjunliu.github.io/categories/blog%E6%90%AD%E5%BB%BA/</loc>
     <lastmod>2020-02-02T09:42:00+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://Suwenjunliu.github.io/categories/blog%E6%90%AD%E5%BB%BA/</loc>
+    <loc>https://Suwenjunliu.github.io/tags/blog%E6%90%AD%E5%BB%BA/</loc>
     <lastmod>2020-02-02T09:42:00+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -106,13 +106,13 @@
   </url>
   
   <url>
-    <loc>https://Suwenjunliu.github.io/tags/%E8%AF%BB%E5%90%8E%E6%84%9F/</loc>
+    <loc>https://Suwenjunliu.github.io/categories/%E8%AF%BB%E5%90%8E%E6%84%9F/</loc>
     <lastmod>2019-07-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://Suwenjunliu.github.io/categories/%E8%AF%BB%E5%90%8E%E6%84%9F/</loc>
+    <loc>https://Suwenjunliu.github.io/tags/%E8%AF%BB%E5%90%8E%E6%84%9F/</loc>
     <lastmod>2019-07-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -195,13 +195,6 @@
   </url>
   
   <url>
-    <loc>https://Suwenjunliu.github.io/acgn/sometest/</loc>
-    <lastmod>2019-01-08T15:35:57+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://Suwenjunliu.github.io/about/</loc>
     <lastmod>2019-01-08T15:35:57+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -210,6 +203,13 @@
   
   <url>
     <loc>https://Suwenjunliu.github.io/codeindex/</loc>
+    <lastmod>2019-01-08T15:35:57+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://Suwenjunliu.github.io/acgn/sometest/</loc>
     <lastmod>2019-01-08T15:35:57+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
