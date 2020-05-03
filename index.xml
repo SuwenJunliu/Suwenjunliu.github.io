@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Junliu</copyright>
-    <lastBuildDate>Sun, 02 Feb 2020 09:42:00 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 03 May 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://Suwenjunliu.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>读后感系列-你以为你以为的就是你以为的吗？</title>
+      <link>https://Suwenjunliu.github.io/post/%E8%AF%BB%E5%90%8E%E6%84%9F%E7%B3%BB%E5%88%97-%E4%BD%A0%E4%BB%A5%E4%B8%BA%E4%BD%A0%E4%BB%A5%E4%B8%BA/</link>
+      <pubDate>Sun, 03 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://Suwenjunliu.github.io/post/%E8%AF%BB%E5%90%8E%E6%84%9F%E7%B3%BB%E5%88%97-%E4%BD%A0%E4%BB%A5%E4%B8%BA%E4%BD%A0%E4%BB%A5%E4%B8%BA/</guid>
+      <description>前言 本文为《你以为你以为的就是你以为的吗？》一书的读后感，也是读后感系列的第二个作品。由于新冠肺炎疫情的影响，导致无法正常回到学校和研究所进</description>
+    </item>
     
     <item>
       <title>基于Hugo的Blog搭建</title>
