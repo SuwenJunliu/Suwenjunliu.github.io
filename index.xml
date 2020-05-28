@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Junliu</copyright>
-    <lastBuildDate>Sun, 03 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://Suwenjunliu.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Ubuntu20.04版本与地震软件的安装</title>
+      <link>https://Suwenjunliu.github.io/post/ubuntu20_04_install/</link>
+      <pubDate>Thu, 28 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://Suwenjunliu.github.io/post/ubuntu20_04_install/</guid>
+      <description>前言 由于我今天从拼多多上购入了新的笔记本，炫龙M7，CPU为Ryzen5-3600，GPU为RTX2060，正好我的旧电脑已经服役了三年，于</description>
+    </item>
     
     <item>
       <title>读后感系列-你以为你以为的就是你以为的吗？</title>

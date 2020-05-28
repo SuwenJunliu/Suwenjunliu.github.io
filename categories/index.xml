@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Junliu</copyright>
-    <lastBuildDate>Sun, 03 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 28 May 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://Suwenjunliu.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>运维</title>
+      <link>https://Suwenjunliu.github.io/categories/%E8%BF%90%E7%BB%B4/</link>
+      <pubDate>Thu, 28 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://Suwenjunliu.github.io/categories/%E8%BF%90%E7%BB%B4/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>读后感</title>
