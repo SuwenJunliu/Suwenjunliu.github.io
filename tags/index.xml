@@ -7,10 +7,28 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Junliu</copyright>
-    <lastBuildDate>Thu, 28 May 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 03 Aug 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://Suwenjunliu.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>书籍</title>
+      <link>https://Suwenjunliu.github.io/tags/%E4%B9%A6%E7%B1%8D/</link>
+      <pubDate>Mon, 03 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://Suwenjunliu.github.io/tags/%E4%B9%A6%E7%B1%8D/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>读后感</title>
+      <link>https://Suwenjunliu.github.io/tags/%E8%AF%BB%E5%90%8E%E6%84%9F/</link>
+      <pubDate>Mon, 03 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://Suwenjunliu.github.io/tags/%E8%AF%BB%E5%90%8E%E6%84%9F/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>linux</title>
@@ -27,24 +45,6 @@
       <pubDate>Thu, 28 May 2020 00:00:00 +0000</pubDate>
       
       <guid>https://Suwenjunliu.github.io/tags/%E9%A9%B1%E5%8A%A8/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>书籍</title>
-      <link>https://Suwenjunliu.github.io/tags/%E4%B9%A6%E7%B1%8D/</link>
-      <pubDate>Sun, 03 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://Suwenjunliu.github.io/tags/%E4%B9%A6%E7%B1%8D/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>读后感</title>
-      <link>https://Suwenjunliu.github.io/tags/%E8%AF%BB%E5%90%8E%E6%84%9F/</link>
-      <pubDate>Sun, 03 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://Suwenjunliu.github.io/tags/%E8%AF%BB%E5%90%8E%E6%84%9F/</guid>
       <description></description>
     </item>
     
