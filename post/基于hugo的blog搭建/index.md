@@ -87,3 +87,28 @@ git commit -m "commit"
 git push -u origin master -f
 cd E:\blog\hugo-blog\junliusw.cn
 ```
+
+### 关于Github停止密码登录的问题
+
+今天重新的推送Blog更新的时候发现了问题，在cmd中运行上述bat提示：
+
+```
+Logon failed, use ctrl+c to cancel basic credential prompt.
+Password for 'https://Suwenjunliu@github.com':
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://Suwenjunliu@github.com/Suwenjunliu/Suwenjunliu.github.io.git/
+```
+因此，我们需要申请一个用于部署blog的token。可以在Github主页中找到Setting，选择Developer settings，在personal access tokens中，选择生成一个新的tokens。然后根据需要选择这个tokens对应的功能，记住对应的tokens值，并且替换掉上述对应的GithubName，比如我申请到的tokens叫做AAA，那么只需要将
+
+```
+git remote add origin https://github.com/Suwenjunliu/Suwenjunliu.github.io.git
+```
+
+替换为
+
+```
+git remote add origin https://github.com/Suwenjunliu/AAA.github.io.git
+```
+
+即可。请妥善保管好Token值！

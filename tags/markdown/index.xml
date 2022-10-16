@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Junliu</copyright>
-    <lastBuildDate>Sun, 02 Feb 2020 09:42:00 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 02 Feb 2020 09:42:00 +0000</lastBuildDate>
     
 	<atom:link href="https://Suwenjunliu.github.io/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
     
@@ -15,7 +15,7 @@
     <item>
       <title>基于Hugo的Blog搭建</title>
       <link>https://Suwenjunliu.github.io/post/%E5%9F%BA%E4%BA%8Ehugo%E7%9A%84blog%E6%90%AD%E5%BB%BA/</link>
-      <pubDate>Sun, 02 Feb 2020 09:42:00 +0800</pubDate>
+      <pubDate>Sun, 02 Feb 2020 09:42:00 +0000</pubDate>
       
       <guid>https://Suwenjunliu.github.io/post/%E5%9F%BA%E4%BA%8Ehugo%E7%9A%84blog%E6%90%AD%E5%BB%BA/</guid>
       <description>Before the beginning 最开始的时候，网站采用hexo搭建。但是在使用过程中出现了以下的问题 每次Hexo编译的时间过长，本来改动特别小（可能只有一篇文章的一点</description>

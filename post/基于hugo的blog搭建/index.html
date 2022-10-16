@@ -42,16 +42,16 @@
 <meta property="og:description" content="Before the beginning 最开始的时候，网站采用hexo搭建。但是在使用过程中出现了以下的问题 每次Hexo编译的时间过长，本来改动特别小（可能只有一篇文章的一点" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://Suwenjunliu.github.io/post/%E5%9F%BA%E4%BA%8Ehugo%E7%9A%84blog%E6%90%AD%E5%BB%BA/" />
-<meta property="article:published_time" content="2020-02-02T09:42:00&#43;08:00"/>
-<meta property="article:modified_time" content="2020-02-02T09:42:00&#43;08:00"/>
+<meta property="article:published_time" content="2020-02-02T09:42:00&#43;00:00"/>
+<meta property="article:modified_time" content="2020-02-02T09:42:00&#43;00:00"/>
 
 <meta itemprop="name" content="基于Hugo的Blog搭建">
 <meta itemprop="description" content="Before the beginning 最开始的时候，网站采用hexo搭建。但是在使用过程中出现了以下的问题 每次Hexo编译的时间过长，本来改动特别小（可能只有一篇文章的一点">
 
 
-<meta itemprop="datePublished" content="2020-02-02T09:42:00&#43;08:00" />
-<meta itemprop="dateModified" content="2020-02-02T09:42:00&#43;08:00" />
-<meta itemprop="wordCount" content="1086">
+<meta itemprop="datePublished" content="2020-02-02T09:42:00&#43;00:00" />
+<meta itemprop="dateModified" content="2020-02-02T09:42:00&#43;00:00" />
+<meta itemprop="wordCount" content="1398">
 
 
 
@@ -144,7 +144,7 @@
         <div class="post-category">
             <a href="/categories/blog%E6%90%AD%E5%BB%BA/"> Blog搭建 </a>
             </div>
-          <span class="more-meta"> 约 1086 字 </span>
+          <span class="more-meta"> 约 1398 字 </span>
           <span class="more-meta"> 预计阅读 3 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
@@ -164,7 +164,10 @@
 <li><a href="#关于该hugo主题下的一些tips">关于该Hugo主题下的一些Tips</a>
 <ul>
 <li><a href="#增加导航菜单按钮">增加导航菜单按钮</a></li>
-<li><a href="#bat脚本进行推送">Bat脚本进行推送</a></li>
+<li><a href="#bat脚本进行推送">Bat脚本进行推送</a>
+<ul>
+<li><a href="#关于github停止密码登录的问题">关于Github停止密码登录的问题</a></li>
+</ul></li>
 </ul></li>
 </ul>
 </nav>
@@ -304,6 +307,45 @@ git push -u origin master -f
 cd E:\blog\hugo-blog\junliusw.cn</pre></td></tr></table>
 </div>
 </div>
+<h3 id="关于github停止密码登录的问题">关于Github停止密码登录的问题</h3>
+
+<p>今天重新的推送Blog更新的时候发现了问题，在cmd中运行上述bat提示：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">Logon failed, use ctrl+c to cancel basic credential prompt.
+Password for &#39;https://Suwenjunliu@github.com&#39;:
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for &#39;https://Suwenjunliu@github.com/Suwenjunliu/Suwenjunliu.github.io.git/</pre></td></tr></table>
+</div>
+</div>
+<p>因此，我们需要申请一个用于部署blog的token。可以在Github主页中找到Setting，选择Developer settings，在personal access tokens中，选择生成一个新的tokens。然后根据需要选择这个tokens对应的功能，记住对应的tokens值，并且替换掉上述对应的GithubName，比如我申请到的tokens叫做AAA，那么只需要将</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">git remote add origin https://github.com/Suwenjunliu/Suwenjunliu.github.io.git</pre></td></tr></table>
+</div>
+</div>
+<p>替换为</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">git remote add origin https://github.com/Suwenjunliu/AAA.github.io.git</pre></td></tr></table>
+</div>
+</div>
+<p>即可。请妥善保管好Token值！</p>
+
     </div>
 
     <div class="post-copyright">
