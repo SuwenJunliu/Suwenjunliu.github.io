@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Linux on JunliuBlog - Junliu的个人记录站点</title>
-    <link>https://Suwenjunliu.github.io/tags/linux/</link>
-    <description>Recent content in Linux on JunliuBlog - Junliu的个人记录站点</description>
+    <title>笔记 on JunliuBlog - Junliu的个人记录站点</title>
+    <link>https://Suwenjunliu.github.io/tags/%E7%AC%94%E8%AE%B0/</link>
+    <description>Recent content in 笔记 on JunliuBlog - Junliu的个人记录站点</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Junliu</copyright>
     <lastBuildDate>Fri, 24 Jun 2022 01:58:00 +0800</lastBuildDate>
     
-	<atom:link href="https://Suwenjunliu.github.io/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://Suwenjunliu.github.io/tags/%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -19,15 +19,6 @@
       
       <guid>https://Suwenjunliu.github.io/post/linux_sh%E6%89%8B%E5%86%8C%E7%AC%94%E8%AE%B0/</guid>
       <description>Before the beginning 在南京大学的 blog并不是要完整的翻译整篇手册的内容，而是选取一些我原来不知道的知识点进行解释。 sh 手册导读 Redirections 重定向 重定向的格式为 1 [n] redir-op</description>
-    </item>
-    
-    <item>
-      <title>Ubuntu20.04版本与地震软件的安装</title>
-      <link>https://Suwenjunliu.github.io/post/ubuntu20_04_install/</link>
-      <pubDate>Thu, 28 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://Suwenjunliu.github.io/post/ubuntu20_04_install/</guid>
-      <description>前言 由于我今天从拼多多上购入了新的笔记本，炫龙M7，CPU为Ryzen5-3600，GPU为RTX2060，正好我的旧电脑已经服役了三年，于</description>
     </item>
     
   </channel>

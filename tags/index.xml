@@ -7,10 +7,46 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Junliu</copyright>
-    <lastBuildDate>Mon, 03 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 24 Jun 2022 01:58:00 +0800</lastBuildDate>
     
 	<atom:link href="https://Suwenjunliu.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Linux</title>
+      <link>https://Suwenjunliu.github.io/tags/linux/</link>
+      <pubDate>Fri, 24 Jun 2022 01:58:00 +0800</pubDate>
+      
+      <guid>https://Suwenjunliu.github.io/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>shell</title>
+      <link>https://Suwenjunliu.github.io/tags/shell/</link>
+      <pubDate>Fri, 24 Jun 2022 01:58:00 +0800</pubDate>
+      
+      <guid>https://Suwenjunliu.github.io/tags/shell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>手册</title>
+      <link>https://Suwenjunliu.github.io/tags/%E6%89%8B%E5%86%8C/</link>
+      <pubDate>Fri, 24 Jun 2022 01:58:00 +0800</pubDate>
+      
+      <guid>https://Suwenjunliu.github.io/tags/%E6%89%8B%E5%86%8C/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>笔记</title>
+      <link>https://Suwenjunliu.github.io/tags/%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Fri, 24 Jun 2022 01:58:00 +0800</pubDate>
+      
+      <guid>https://Suwenjunliu.github.io/tags/%E7%AC%94%E8%AE%B0/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>书籍</title>
@@ -27,15 +63,6 @@
       <pubDate>Mon, 03 Aug 2020 00:00:00 +0000</pubDate>
       
       <guid>https://Suwenjunliu.github.io/tags/%E8%AF%BB%E5%90%8E%E6%84%9F/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>linux</title>
-      <link>https://Suwenjunliu.github.io/tags/linux/</link>
-      <pubDate>Thu, 28 May 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://Suwenjunliu.github.io/tags/linux/</guid>
       <description></description>
     </item>
     

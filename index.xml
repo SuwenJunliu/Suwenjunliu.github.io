@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Junliu</copyright>
-    <lastBuildDate>Mon, 03 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 24 Jun 2022 01:58:00 +0800</lastBuildDate>
     
 	<atom:link href="https://Suwenjunliu.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Linux-sh命令手册</title>
+      <link>https://Suwenjunliu.github.io/post/linux_sh%E6%89%8B%E5%86%8C%E7%AC%94%E8%AE%B0/</link>
+      <pubDate>Fri, 24 Jun 2022 01:58:00 +0800</pubDate>
+      
+      <guid>https://Suwenjunliu.github.io/post/linux_sh%E6%89%8B%E5%86%8C%E7%AC%94%E8%AE%B0/</guid>
+      <description>Before the beginning 在南京大学的 blog并不是要完整的翻译整篇手册的内容，而是选取一些我原来不知道的知识点进行解释。 sh 手册导读 Redirections 重定向 重定向的格式为 1 [n] redir-op</description>
+    </item>
     
     <item>
       <title>读后感系列-圆圈正义？</title>
@@ -108,7 +117,7 @@
       <pubDate>Tue, 08 Jan 2019 15:35:57 +0000</pubDate>
       
       <guid>https://Suwenjunliu.github.io/about/</guid>
-      <description>关于Junliu Junliu，喜欢卖萌的未知生物，来自一座南方小城 ↓以下是这只猫的教育经历 2011~2014 Nanning No.2 Middle School 2014~2018 Jilin Univ. Geophyshics 2018~Now IGGCAS 关于Blog 原计划是写关于学</description>
+      <description>关于Junliu Junliu，喜欢卖萌的未知生物，来自一座南方小城 ↓以下是这只猫的教育经历 2011~2014 Nanning No.2 Middle School 2014~2018 Jilin Univ. Geophyshics 2018~2022 IGGCAS 关于Blog 原计划是写关于学</description>
     </item>
     
     <item>

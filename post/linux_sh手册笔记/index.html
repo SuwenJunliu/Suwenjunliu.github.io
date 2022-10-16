@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Linux-sh命令手册 - JunliuBlog - Junliu的个人记录站点</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="Junliu" /><meta name="description" content="Before the beginning 在南京大学的 blog并不是要完整的翻译整篇手册的内容，而是选取一些我原来不知道的知识点进行解释。 sh 手册导读 Redirections 重定向 重定向的格式为 1 [n] redir-op" /><meta name="keywords" content="Junliu, blog" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.55.6 with even 4.0.0" />
+
+
+<link rel="canonical" href="https://Suwenjunliu.github.io/post/linux_sh%E6%89%8B%E5%86%8C%E7%AC%94%E8%AE%B0/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<link href="/dist/even.c2a46f00.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="Linux-sh命令手册" />
+<meta property="og:description" content="Before the beginning 在南京大学的 blog并不是要完整的翻译整篇手册的内容，而是选取一些我原来不知道的知识点进行解释。 sh 手册导读 Redirections 重定向 重定向的格式为 1 [n] redir-op" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://Suwenjunliu.github.io/post/linux_sh%E6%89%8B%E5%86%8C%E7%AC%94%E8%AE%B0/" />
+<meta property="article:published_time" content="2022-06-24T01:58:00&#43;08:00"/>
+<meta property="article:modified_time" content="2022-06-24T01:58:00&#43;08:00"/>
+
+<meta itemprop="name" content="Linux-sh命令手册">
+<meta itemprop="description" content="Before the beginning 在南京大学的 blog并不是要完整的翻译整篇手册的内容，而是选取一些我原来不知道的知识点进行解释。 sh 手册导读 Redirections 重定向 重定向的格式为 1 [n] redir-op">
+
+
+<meta itemprop="datePublished" content="2022-06-24T01:58:00&#43;08:00" />
+<meta itemprop="dateModified" content="2022-06-24T01:58:00&#43;08:00" />
+<meta itemprop="wordCount" content="316">
+
+
+
+<meta itemprop="keywords" content="Linux,shell,手册,笔记," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Linux-sh命令手册"/>
+<meta name="twitter:description" content="Before the beginning 在南京大学的 blog并不是要完整的翻译整篇手册的内容，而是选取一些我原来不知道的知识点进行解释。 sh 手册导读 Redirections 重定向 重定向的格式为 1 [n] redir-op"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">JunliuBlog</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a><a href="/pdfarchives/">
+        <li class="mobile-menu-item">PdfArchives</li>
+      </a><a href="/codeindex/">
+        <li class="mobile-menu-item">Code</li>
+      </a><a href="/acgn/">
+        <li class="mobile-menu-item">ACGN</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">JunliuBlog</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/pdfarchives/">PdfArchives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/codeindex/">Code</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/acgn/">ACGN</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Linux-sh命令手册</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2022-06-24 </span>
+        <div class="post-category">
+            <a href="/categories/linux%E8%BF%90%E7%BB%B4/"> Linux运维 </a>
+            </div>
+          <span class="more-meta"> 约 316 字 </span>
+          <span class="more-meta"> 预计阅读 1 分钟 </span>
+        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#before-the-beginning">Before the beginning</a></li>
+<li><a href="#sh-手册导读">sh 手册导读</a>
+<ul>
+<li><a href="#redirections-重定向">Redirections 重定向</a></li>
+</ul></li>
+</ul>
+</nav>
+  </div>
+</div>
+  <div class="post-outdated">
+    <div class="hint">
+      <p>【注意】最后更新于 <span class="timeago" datetime="2022-06-24T01:58:00" title="June 24, 2022">June 24, 2022</span>，文中内容可能已过时，请谨慎使用。</p>
+    </div>
+  </div>
+    <div class="post-content">
+      
+
+<h1 id="before-the-beginning">Before the beginning</h1>
+
+<p>在南京大学的</p>
+
+<p>blog并不是要完整的翻译整篇手册的内容，而是选取一些我原来不知道的知识点进行解释。</p>
+
+<h1 id="sh-手册导读">sh 手册导读</h1>
+
+<h2 id="redirections-重定向">Redirections 重定向</h2>
+
+<p>重定向的格式为</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">[n] redir-op file</pre></td></tr></table>
+</div>
+</div>
+<p>其中 <code>&quot;[n]&quot;</code> 是一个可选的<code>File descriptor</code>。这让我想起了一些shell脚本中的 <code>&quot;2&gt;&amp;1&quot;</code> 。在StackoverFlow中的<a href="https://stackoverflowpoint.com/question/bash-in-the-shell-what-does-21-mean/"><code>In the shell, what does &quot; 2&gt;&amp;1 &quot; mean?</code></a>提到：</p>
+
+<blockquote>
+<p>File descriptor 0 is the standard input (stdin).<br />
+File descriptor 1 is the standard output (stdout).<br />
+File descriptor 2 is the standard error (stderr).</p>
+</blockquote>
+
+<p>作用是把标准错误输出到屏幕上。<code>&amp;</code> 的作用是避免将 <code>1</code> 解释为文件名。严格意义上来说，所有的</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">echo test &gt; afile.txt</pre></td></tr></table>
+</div>
+</div>
+<p>实际上都是默认了</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">echo test 1&gt; afile.txt</pre></td></tr></table>
+</div>
+</div>
+<p>博文中提到了一个很有趣的demo</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">(base) junliu@JunliusLaptop:~$ ls -ld /tmp /tnt
+ls: cannot access &#39;/tnt&#39;: No such file or directory
+drwxrwxrwt 1 root root 512 Jun 23 17:55 /tmp
+
+(base) junliu@JunliusLaptop:~$ ls -ld /tmp /tnt &gt;/dev/null
+ls: cannot access &#39;/tnt&#39;: No such file or directory
+
+(base) junliu@JunliusLaptop:~$ ls -ld /tmp /tnt 2&gt;/dev/null
+drwxrwxrwt 1 root root 512 Jun 23 17:55 /tmp</pre></td></tr></table>
+</div>
+</div>
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">Junliu</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2022-06-24
+        
+    </span>
+  </p>
+  <p class="copyright-item">
+      <span class="item-title">原始文档</span>
+      <span class="item-content"><a class="link-to-markdown" href="https://Suwenjunliu.github.io/post/linux_sh%E6%89%8B%E5%86%8C%E7%AC%94%E8%AE%B0/index.md" target="_blank">查看本文 Markdown 版本 »</a></span>
+    </p>
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/linux/">Linux</a>
+          <a href="/tags/shell/">shell</a>
+          <a href="/tags/%E6%89%8B%E5%86%8C/">手册</a>
+          <a href="/tags/%E7%AC%94%E8%AE%B0/">笔记</a>
+          </div>
+      <nav class="post-nav">
+        
+        <a class="next" href="/post/%E8%AF%BB%E5%90%8E%E6%84%9F%E7%B3%BB%E5%88%97-%E5%9C%86%E5%9C%88%E6%AD%A3%E4%B9%89/">
+            <span class="next-text nav-default">读后感系列-圆圈正义？</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+  
+  
+
+  
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="swjl2314@mails.jlu.edu.cn" class="iconfont icon-email" title="email"></a>
+      <a href="https://weibo.com/u/2031737633" class="iconfont icon-weibo" title="weibo"></a>
+      <a href="https://www.zhihu.com/people/su-wen-jun-liu-84/activities" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="https://github.com/SuwenJunliu" class="iconfont icon-gitlab" title="gitlab"></a>
+      <a href="https://space.bilibili.com/2268817" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="https://Suwenjunliu.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  <div class="busuanzi-footer">
+    <span id="busuanzi_container_site_pv"> 本站总访问量 <span id="busuanzi_value_site_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次 </span>
+      <span class="division">|</span>
+    <span id="busuanzi_container_site_uv"> 本站总访客数 <span id="busuanzi_value_site_uv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 人 </span>
+  </div>
+
+  <span class="copyright-year">
+    &copy; 
+    2019 - 
+    2022
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">Junliu</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/timeago.js@3.0.2/dist/timeago.min.js" integrity="sha256-jwCP0NAdCBloaIWTWHmW4i3snUNMHUNO+jr9rYd2iOI=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/timeago.js@3.0.2/dist/timeago.locales.min.js" integrity="sha256-ZwofwC1Lf/faQCzN7nZtfijVV6hSwxjQMwXL4gn9qU8=" crossorigin="anonymous"></script>
+  <script><!-- NOTE: timeago.js uses the language code format like "zh_CN" (underscore and case sensitive) -->
+    var languageCode = "en".replace(/-/g, '_').replace(/_(.*)/, function ($0, $1) {return $0.replace($1, $1.toUpperCase());});
+    timeago().render(document.querySelectorAll('.timeago'), languageCode);
+    timeago.cancel();  
+  </script>
+<script type="text/javascript" src="/dist/even.26188efa.min.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>
