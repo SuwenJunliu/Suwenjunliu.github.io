@@ -36,41 +36,43 @@ autoreconf --install
 
 ### 可能的一些问题
 
-- 生成LaTex文档的时候出现：
+#### 无法生成LaTex文档
 
-    {{% admonition example %}}
+make的时候提示：
 
-    lyx --export pdf2 doc/mineos.lyx
-    convert-im6.q16: not authorized `pdf:/tmp/lyx_tmpdir.MwNyJvV10002/lyx_tmpbuf0/12_media_kevin_junliu_mineos_doc_Figures_Fig2.pdf' @ error/constitute.c/WriteImage/1037.
-    /usr/share/lyx/scripts/convertDefault.py ERROR
-    Execution of "convert" failed.
-    support/Systemcall.cpp (291): Systemcall: 'python -tt "/usr/share/lyx/scripts/convertDefault.py" ps "/tmp/lyx_tmpdir.MwNyJvV10002/lyx_tmpbuf0/12_media_kevin_junliu_mineos_doc_Figures_Fig2.eps" pdf "/tmp/lyx_tmpdir.MwNyJvV10002/lyx_tmpbuf0/12_media_kevin_junliu_mineos_doc_Figures_Fig2.pdf"' finished with exit code 1
-    Error: Cannot convert file
+{{% admonition example %}}
 
-    {{% /admonition %}}
+lyx --export pdf2 doc/mineos.lyx
+convert-im6.q16: not authorized `pdf:/tmp/lyx_tmpdir.MwNyJvV10002/lyx_tmpbuf0/12_media_kevin_junliu_mineos_doc_Figures_Fig2.pdf' @ error/constitute.c/WriteImage/1037.
+/usr/share/lyx/scripts/convertDefault.py ERROR
+Execution of "convert" failed.
+support/Systemcall.cpp (291): Systemcall: 'python -tt "/usr/share/lyx/scripts/convertDefault.py" ps "/tmp/lyx_tmpdir.MwNyJvV10002/lyx_tmpbuf0/12_media_kevin_junliu_mineos_doc_Figures_Fig2.eps" pdf "/tmp/lyx_tmpdir.MwNyJvV10002/lyx_tmpbuf0/12_media_kevin_junliu_mineos_doc_Figures_Fig2.pdf"' finished with exit code 1
+Error: Cannot convert file
+
+{{% /admonition %}}
 
 
-    这个是 **ImageMagick** 的权限设置问题，可以参考这个 [StackOverflow](https://stackoverflow.com/questions/52861946/imagemagick-not-authorized-to-convert-pdf-to-an-image) 上的说明，调整对应的权限。我解决的方法是：修改 **ImageMagick** 对应的权限设置，即修改 
-
-    
-    > /etc/PATH_OF_IMAGESMAGICK/policy.xml
-    
-
-    在我的环境下路径是 
+这个是 **ImageMagick** 的权限设置问题，可以参考这个 [StackOverflow](https://stackoverflow.com/questions/52861946/imagemagick-not-authorized-to-convert-pdf-to-an-image) 上的说明，调整对应的权限。我解决的方法是：修改 **ImageMagick** 对应的权限设置，即修改 
 
     
-    > /etc/ImageMagick-6/policy.xml
+> /etc/PATH_OF_IMAGESMAGICK/policy.xml
     
 
-    找到
+在我的环境下路径是 
 
     
-    > \<policy domain="coder" rights="none" pattern="PDF" />
+> /etc/ImageMagick-6/policy.xml
     
 
-    将其修改为
+找到
+
     
-    > \<policy domain="coder" rights="read|write" pattern="PDF" />
+> \<policy domain="coder" rights="none" pattern="PDF" />
+    
+
+将其修改为
+    
+> \<policy domain="coder" rights="read|write" pattern="PDF" />
     
 
 
