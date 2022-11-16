@@ -51,7 +51,7 @@
 
 <meta itemprop="datePublished" content="2022-11-16T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2022-11-16T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="473">
+<meta itemprop="wordCount" content="488">
 
 
 
@@ -144,7 +144,7 @@
         <div class="post-category">
             <a href="/categories/%E5%9C%B0%E7%90%83%E7%89%A9%E7%90%86/"> 地球物理 </a>
             </div>
-          <span class="more-meta"> 约 473 字 </span>
+          <span class="more-meta"> 约 488 字 </span>
           <span class="more-meta"> 预计阅读 1 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
@@ -221,62 +221,66 @@ autoreconf --install
 
 <ul>
 <li><p>生成LaTex文档的时候出现：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span></pre></td>
-<td class="lntd">
-<pre class="chroma">lyx --export pdf2 doc/mineos.lyx
-convert-im6.q16: not authorized `pdf:/tmp/lyx_tmpdir.MwNyJvV10002/lyx_tmpbuf0/12_media_kevin_junliu_mineos_doc_Figures_Fig2.pdf&#39; @ error/constitute.c/WriteImage/1037.
+
+<p><div class="admonition example"></p>
+
+<p>lyx &ndash;export pdf2 doc/mineos.lyx
+convert-im6.q16: not authorized `pdf:/tmp/lyx_tmpdir.MwNyJvV10002/lyx_tmpbuf0/12_media_kevin_junliu_mineos_doc_Figures_Fig2.pdf&rsquo; @ error/constitute.c/WriteImage/1037.
 /usr/share/lyx/scripts/convertDefault.py ERROR
-Execution of &#34;convert&#34; failed.
-support/Systemcall.cpp (291): Systemcall: &#39;python -tt &#34;/usr/share/lyx/scripts/convertDefault.py&#34; ps &#34;/tmp/lyx_tmpdir.MwNyJvV10002/lyx_tmpbuf0/12_media_kevin_junliu_mineos_doc_Figures_Fig2.eps&#34; pdf &#34;/tmp/lyx_tmpdir.MwNyJvV10002/lyx_tmpbuf0/12_media_kevin_junliu_mineos_doc_Figures_Fig2.pdf&#34;&#39; finished with exit code 1
-Error: Cannot convert file</pre></td></tr></table>
-</div>
-</div>
-<p>这个是 <strong>ImageMagick</strong> 的权限设置问题，可以参考这个 <a href="https://stackoverflow.com/questions/52861946/imagemagick-not-authorized-to-convert-pdf-to-an-image">StackOverflow</a> 上的说明，调整对应的权限。我解决的方法是：修改 <strong>ImageMagick</strong> 对应的权限设置，即修改</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span></pre></td>
-<td class="lntd">
-<pre class="chroma">/etc/PATH_OF_IMAGESMAGICK/policy.xml</pre></td></tr></table>
-</div>
-</div>
-<p>在我的环境下路径是</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span></pre></td>
-<td class="lntd">
-<pre class="chroma">/etc/ImageMagick-6/policy.xml</pre></td></tr></table>
-</div>
-</div>
-<p>找到</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span></pre></td>
-<td class="lntd">
-<pre class="chroma">&lt;policy domain=&#34;coder&#34; rights=&#34;none&#34; pattern=&#34;PDF&#34; /&gt;</pre></td></tr></table>
-</div>
-</div>
-<p>将其修改为</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span></pre></td>
-<td class="lntd">
-<pre class="chroma">&lt;policy domain=&#34;coder&#34; rights=&#34;read|write&#34; pattern=&#34;PDF&#34; /&gt;</pre></td></tr></table>
-</div>
-</div></li>
+Execution of &ldquo;convert&rdquo; failed.
+support/Systemcall.cpp (291): Systemcall: &lsquo;python -tt &ldquo;/usr/share/lyx/scripts/convertDefault.py&rdquo; ps &ldquo;/tmp/lyx_tmpdir.MwNyJvV10002/lyx_tmpbuf0/12_media_kevin_junliu_mineos_doc_Figures_Fig2.eps&rdquo; pdf &ldquo;/tmp/lyx_tmpdir.MwNyJvV10002/lyx_tmpbuf0/12_media_kevin_junliu_mineos_doc_Figures_Fig2.pdf&rdquo;&rsquo; finished with exit code 1
+Error: Cannot convert file</p></li>
 </ul>
 
+<p></div></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">这个是 **ImageMagick** 的权限设置问题，可以参考这个 [StackOverflow](https://stackoverflow.com/questions/52861946/imagemagick-not-authorized-to-convert-pdf-to-an-image) 上的说明，调整对应的权限。我解决的方法是：修改 **ImageMagick** 对应的权限设置，即修改 
+
+
+&gt; /etc/PATH_OF_IMAGESMAGICK/policy.xml
+
+
+在我的环境下路径是 
+
+
+&gt; /etc/ImageMagick-6/policy.xml
+
+
+找到
+
+
+&gt; \&lt;policy domain=&#34;coder&#34; rights=&#34;none&#34; pattern=&#34;PDF&#34; /&gt;
+
+
+将其修改为
+
+&gt; \&lt;policy domain=&#34;coder&#34; rights=&#34;read|write&#34; pattern=&#34;PDF&#34; /&gt;</pre></td></tr></table>
+</div>
+</div>
 <h1 id="参考文献">参考文献</h1>
 
 <p>Zhao, L. and Chevrot, S. (2011), An efficient and flexible approach to the calculation of three-dimensional full-wave Fréchet kernels for seismic tomography—I. Theory. Geophysical Journal International, 185: 922-938. <a href="https://doi.org/10.1111/j.1365-246X.2011.04983.x">https://doi.org/10.1111/j.1365-246X.2011.04983.x</a></p>
