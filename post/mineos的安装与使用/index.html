@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Linux-sh命令手册 - JunliuBlog - Junliu的个人记录站点</title>
+  <title>MINEOS的安装与使用 - JunliuBlog - Junliu的个人记录站点</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -16,7 +16,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="Junliu" /><meta name="description" content="Before the beginning 在南京大学的 blog并不是要完整的翻译整篇手册的内容，而是选取一些我原来不知道的知识点进行解释。 sh 手册导读 Redirections 重定向 重定向的格式为 1 [n] redir-op" /><meta name="keywords" content="Junliu, blog" />
+<meta name="author" content="Junliu" /><meta name="description" content="前言 由于科研需要，现在正在做一些格林函数张量（Green&amp;rsquo;s Function）的计算。现在还是 Follow Zhao et al., 2011的思路做这方面的工" /><meta name="keywords" content="Junliu, blog" />
 
 
 
@@ -26,7 +26,7 @@
 <meta name="generator" content="Hugo 0.55.6 with even 4.0.0" />
 
 
-<link rel="canonical" href="https://Suwenjunliu.github.io/post/linux_sh%E6%89%8B%E5%86%8C%E7%AC%94%E8%AE%B0/" />
+<link rel="canonical" href="https://Suwenjunliu.github.io/post/mineos%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -38,27 +38,27 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
 
 
-<meta property="og:title" content="Linux-sh命令手册" />
-<meta property="og:description" content="Before the beginning 在南京大学的 blog并不是要完整的翻译整篇手册的内容，而是选取一些我原来不知道的知识点进行解释。 sh 手册导读 Redirections 重定向 重定向的格式为 1 [n] redir-op" />
+<meta property="og:title" content="MINEOS的安装与使用" />
+<meta property="og:description" content="前言 由于科研需要，现在正在做一些格林函数张量（Green&rsquo;s Function）的计算。现在还是 Follow Zhao et al., 2011的思路做这方面的工" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://Suwenjunliu.github.io/post/linux_sh%E6%89%8B%E5%86%8C%E7%AC%94%E8%AE%B0/" />
-<meta property="article:published_time" content="2022-06-24T01:58:00&#43;08:00"/>
-<meta property="article:modified_time" content="2022-06-24T01:58:00&#43;08:00"/>
+<meta property="og:url" content="https://Suwenjunliu.github.io/post/mineos%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/" />
+<meta property="article:published_time" content="2022-11-16T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2022-11-16T00:00:00&#43;00:00"/>
 
-<meta itemprop="name" content="Linux-sh命令手册">
-<meta itemprop="description" content="Before the beginning 在南京大学的 blog并不是要完整的翻译整篇手册的内容，而是选取一些我原来不知道的知识点进行解释。 sh 手册导读 Redirections 重定向 重定向的格式为 1 [n] redir-op">
-
-
-<meta itemprop="datePublished" content="2022-06-24T01:58:00&#43;08:00" />
-<meta itemprop="dateModified" content="2022-06-24T01:58:00&#43;08:00" />
-<meta itemprop="wordCount" content="316">
+<meta itemprop="name" content="MINEOS的安装与使用">
+<meta itemprop="description" content="前言 由于科研需要，现在正在做一些格林函数张量（Green&rsquo;s Function）的计算。现在还是 Follow Zhao et al., 2011的思路做这方面的工">
 
 
+<meta itemprop="datePublished" content="2022-11-16T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2022-11-16T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="473">
 
-<meta itemprop="keywords" content="Linux,shell,手册,笔记," />
+
+
+<meta itemprop="keywords" content="地球物理,MINEOS,合成地震图," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Linux-sh命令手册"/>
-<meta name="twitter:description" content="Before the beginning 在南京大学的 blog并不是要完整的翻译整篇手册的内容，而是选取一些我原来不知道的知识点进行解释。 sh 手册导读 Redirections 重定向 重定向的格式为 1 [n] redir-op"/>
+<meta name="twitter:title" content="MINEOS的安装与使用"/>
+<meta name="twitter:description" content="前言 由于科研需要，现在正在做一些格林函数张量（Green&rsquo;s Function）的计算。现在还是 Follow Zhao et al., 2011的思路做这方面的工"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -137,14 +137,14 @@
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">Linux-sh命令手册</h1>
+      <h1 class="post-title">MINEOS的安装与使用</h1>
 
       <div class="post-meta">
-        <span class="post-time"> 2022-06-24 </span>
+        <span class="post-time"> 2022-11-16 </span>
         <div class="post-category">
-            <a href="/categories/linux%E8%BF%90%E7%BB%B4/"> Linux运维 </a>
+            <a href="/categories/%E5%9C%B0%E7%90%83%E7%89%A9%E7%90%86/"> 地球物理 </a>
             </div>
-          <span class="more-meta"> 约 316 字 </span>
+          <span class="more-meta"> 约 473 字 </span>
           <span class="more-meta"> 预计阅读 1 分钟 </span>
         <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
@@ -155,69 +155,72 @@
   <div class="post-toc-content always-active">
     <nav id="TableOfContents">
 <ul>
-<li><a href="#before-the-beginning">Before the beginning</a></li>
-<li><a href="#sh-手册导读">sh 手册导读</a>
+<li><a href="#前言">前言</a></li>
+<li><a href="#mineos的安装">Mineos的安装</a>
 <ul>
-<li><a href="#redirections-重定向">Redirections 重定向</a></li>
+<li><a href="#一些前置的安装包">一些前置的安装包</a></li>
+<li><a href="#具体流程">具体流程</a>
+<ul>
+<li><a href="#可能的一些问题">可能的一些问题</a></li>
 </ul></li>
+</ul></li>
+<li><a href="#参考文献">参考文献</a></li>
+<li><a href="#文章历史">文章历史</a></li>
 </ul>
 </nav>
   </div>
 </div>
-  <div class="post-outdated">
-    <div class="hint">
-      <p>【注意】最后更新于 <span class="timeago" datetime="2022-06-24T01:58:00" title="June 24, 2022">June 24, 2022</span>，文中内容可能已过时，请谨慎使用。</p>
-    </div>
-  </div>
     <div class="post-content">
       
 
-<h1 id="before-the-beginning">Before the beginning</h1>
+<h1 id="前言">前言</h1>
 
-<p>在南京大学的</p>
+<p>由于科研需要，现在正在做一些格林函数张量（Green&rsquo;s Function）的计算。现在还是 Follow Zhao et al., 2011的思路做这方面的工作。因此需要学习Mineos的操作和使用。为了能够摆脱受制于人的局面，最终还是要重新构建整个框架，那就从公开的东西开始做吧。</p>
 
-<p>blog并不是要完整的翻译整篇手册的内容，而是选取一些我原来不知道的知识点进行解释。</p>
+<h1 id="mineos的安装">Mineos的安装</h1>
 
-<h1 id="sh-手册导读">sh 手册导读</h1>
+<p>现在使用的Mineos版本是CIG公开的，<a href="https://github.com/geodynamics/mineos">地址在这里</a>，如果找不到了应该也能从我的Githuh上头找到Fork的仓库。</p>
 
-<h2 id="redirections-重定向">Redirections 重定向</h2>
+<h2 id="一些前置的安装包">一些前置的安装包</h2>
 
-<p>重定向的格式为</p>
+<ul>
+<li>autoconf</li>
+<li>lyx</li>
+<li>epstopdf</li>
+</ul>
+
+<p>他们可以使用</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><span class="lnt">1
 </span></pre></td>
 <td class="lntd">
-<pre class="chroma">[n] redir-op file</pre></td></tr></table>
+<pre class="chroma">sudo apt-get install autoconf lyx texlive-font-utils</pre></td></tr></table>
 </div>
 </div>
-<p>其中 <code>&quot;[n]&quot;</code> 是一个可选的<code>File descriptor</code>。这让我想起了一些shell脚本中的 <code>&quot;2&gt;&amp;1&quot;</code> 。在StackoverFlow中的<a href="https://stackoverflowpoint.com/question/bash-in-the-shell-what-does-21-mean/"><code>In the shell, what does &quot; 2&gt;&amp;1 &quot; mean?</code></a>提到：</p>
+<p>进行安装。</p>
 
-<blockquote>
-<p>File descriptor 0 is the standard input (stdin).<br />
-File descriptor 1 is the standard output (stdout).<br />
-File descriptor 2 is the standard error (stderr).</p>
-</blockquote>
-
-<p>作用是把标准错误输出到屏幕上。<code>&amp;</code> 的作用是避免将 <code>1</code> 解释为文件名。严格意义上来说，所有的</p>
+<h2 id="具体流程">具体流程</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
 </span></pre></td>
 <td class="lntd">
-<pre class="chroma">echo test &gt; afile.txt</pre></td></tr></table>
+<pre class="chroma">git clone https://github.com/geodynamics/mineos.git
+cd mineos
+autoreconf --install
+./configure</pre></td></tr></table>
 </div>
 </div>
-<p>实际上都是默认了</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span></pre></td>
-<td class="lntd">
-<pre class="chroma">echo test 1&gt; afile.txt</pre></td></tr></table>
-</div>
-</div>
-<p>博文中提到了一个很有趣的demo</p>
+<p>就可以完成安装了。</p>
+
+<h3 id="可能的一些问题">可能的一些问题</h3>
+
+<ul>
+<li><p>生成LaTex文档的时候出现：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><span class="lnt">1
@@ -226,22 +229,64 @@ File descriptor 2 is the standard error (stderr).</p>
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span><span class="lnt">6
-</span><span class="lnt">7
-</span><span class="lnt">8
-</span><span class="lnt">9
 </span></pre></td>
 <td class="lntd">
-<pre class="chroma">(base) junliu@JunliusLaptop:~$ ls -ld /tmp /tnt
-ls: cannot access &#39;/tnt&#39;: No such file or directory
-drwxrwxrwt 1 root root 512 Jun 23 17:55 /tmp
-
-(base) junliu@JunliusLaptop:~$ ls -ld /tmp /tnt &gt;/dev/null
-ls: cannot access &#39;/tnt&#39;: No such file or directory
-
-(base) junliu@JunliusLaptop:~$ ls -ld /tmp /tnt 2&gt;/dev/null
-drwxrwxrwt 1 root root 512 Jun 23 17:55 /tmp</pre></td></tr></table>
+<pre class="chroma">lyx --export pdf2 doc/mineos.lyx
+convert-im6.q16: not authorized `pdf:/tmp/lyx_tmpdir.MwNyJvV10002/lyx_tmpbuf0/12_media_kevin_junliu_mineos_doc_Figures_Fig2.pdf&#39; @ error/constitute.c/WriteImage/1037.
+/usr/share/lyx/scripts/convertDefault.py ERROR
+Execution of &#34;convert&#34; failed.
+support/Systemcall.cpp (291): Systemcall: &#39;python -tt &#34;/usr/share/lyx/scripts/convertDefault.py&#34; ps &#34;/tmp/lyx_tmpdir.MwNyJvV10002/lyx_tmpbuf0/12_media_kevin_junliu_mineos_doc_Figures_Fig2.eps&#34; pdf &#34;/tmp/lyx_tmpdir.MwNyJvV10002/lyx_tmpbuf0/12_media_kevin_junliu_mineos_doc_Figures_Fig2.pdf&#34;&#39; finished with exit code 1
+Error: Cannot convert file</pre></td></tr></table>
 </div>
 </div>
+<p>这个是 <strong>ImageMagick</strong> 的权限设置问题，可以参考这个 <a href="https://stackoverflow.com/questions/52861946/imagemagick-not-authorized-to-convert-pdf-to-an-image">StackOverflow</a> 上的说明，调整对应的权限。我解决的方法是：修改 <strong>ImageMagick</strong> 对应的权限设置，即修改</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">/etc/PATH_OF_IMAGESMAGICK/policy.xml</pre></td></tr></table>
+</div>
+</div>
+<p>在我的环境下路径是</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">/etc/ImageMagick-6/policy.xml</pre></td></tr></table>
+</div>
+</div>
+<p>找到</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">&lt;policy domain=&#34;coder&#34; rights=&#34;none&#34; pattern=&#34;PDF&#34; /&gt;</pre></td></tr></table>
+</div>
+</div>
+<p>将其修改为</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">&lt;policy domain=&#34;coder&#34; rights=&#34;read|write&#34; pattern=&#34;PDF&#34; /&gt;</pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+
+<h1 id="参考文献">参考文献</h1>
+
+<p>Zhao, L. and Chevrot, S. (2011), An efficient and flexible approach to the calculation of three-dimensional full-wave Fréchet kernels for seismic tomography—I. Theory. Geophysical Journal International, 185: 922-938. <a href="https://doi.org/10.1111/j.1365-246X.2011.04983.x">https://doi.org/10.1111/j.1365-246X.2011.04983.x</a></p>
+
+<h1 id="文章历史">文章历史</h1>
+
+<ul>
+<li>2022-11-16 第一次发布，并且一直在修改中。</li>
+</ul>
+
     </div>
 
     <div class="post-copyright">
@@ -252,31 +297,26 @@ drwxrwxrwt 1 root root 512 Jun 23 17:55 /tmp</pre></td></tr></table>
   <p class="copyright-item">
     <span class="item-title">上次更新</span>
     <span class="item-content">
-        2022-06-24
+        2022-11-16
         
     </span>
   </p>
   <p class="copyright-item">
       <span class="item-title">原始文档</span>
-      <span class="item-content"><a class="link-to-markdown" href="https://Suwenjunliu.github.io/post/linux_sh%E6%89%8B%E5%86%8C%E7%AC%94%E8%AE%B0/index.md" target="_blank">查看本文 Markdown 版本 »</a></span>
+      <span class="item-content"><a class="link-to-markdown" href="https://Suwenjunliu.github.io/post/mineos%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/index.md" target="_blank">查看本文 Markdown 版本 »</a></span>
     </p>
   
 </div>
 <footer class="post-footer">
       <div class="post-tags">
-          <a href="/tags/linux/">Linux</a>
-          <a href="/tags/shell/">shell</a>
-          <a href="/tags/%E6%89%8B%E5%86%8C/">手册</a>
-          <a href="/tags/%E7%AC%94%E8%AE%B0/">笔记</a>
+          <a href="/tags/%E5%9C%B0%E7%90%83%E7%89%A9%E7%90%86/">地球物理</a>
+          <a href="/tags/mineos/">MINEOS</a>
+          <a href="/tags/%E5%90%88%E6%88%90%E5%9C%B0%E9%9C%87%E5%9B%BE/">合成地震图</a>
           </div>
       <nav class="post-nav">
-        <a class="prev" href="/post/%E8%AF%BB%E5%90%8E%E6%84%9F%E7%B3%BB%E5%88%97-%E7%97%85%E8%80%85%E7%94%9F%E5%AD%98/">
-            <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">读后感系列-病者生存</span>
-            <span class="prev-text nav-mobile">上一篇</span>
-          </a>
-        <a class="next" href="/post/%E8%AF%BB%E5%90%8E%E6%84%9F%E7%B3%BB%E5%88%97-%E5%9C%86%E5%9C%88%E6%AD%A3%E4%B9%89/">
-            <span class="next-text nav-default">读后感系列-圆圈正义？</span>
+        
+        <a class="next" href="/post/%E8%AF%BB%E5%90%8E%E6%84%9F%E7%B3%BB%E5%88%97-%E7%97%85%E8%80%85%E7%94%9F%E5%AD%98/">
+            <span class="next-text nav-default">读后感系列-病者生存</span>
             <span class="next-text nav-mobile">下一篇</span>
             <i class="iconfont icon-right"></i>
           </a>

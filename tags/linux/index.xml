@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Linux on JunliuBlog - Junliu的个人记录站点</title>
+    <title>linux on JunliuBlog - Junliu的个人记录站点</title>
     <link>https://Suwenjunliu.github.io/tags/linux/</link>
-    <description>Recent content in Linux on JunliuBlog - Junliu的个人记录站点</description>
+    <description>Recent content in linux on JunliuBlog - Junliu的个人记录站点</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Junliu</copyright>

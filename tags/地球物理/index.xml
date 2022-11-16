@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>地球物理 on JunliuBlog - Junliu的个人记录站点</title>
+    <link>https://Suwenjunliu.github.io/tags/%E5%9C%B0%E7%90%83%E7%89%A9%E7%90%86/</link>
+    <description>Recent content in 地球物理 on JunliuBlog - Junliu的个人记录站点</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Junliu</copyright>
+    <lastBuildDate>Wed, 16 Nov 2022 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://Suwenjunliu.github.io/tags/%E5%9C%B0%E7%90%83%E7%89%A9%E7%90%86/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>MINEOS的安装与使用</title>
+      <link>https://Suwenjunliu.github.io/post/mineos%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Wed, 16 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://Suwenjunliu.github.io/post/mineos%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%BF%E7%94%A8/</guid>
+      <description>前言 由于科研需要，现在正在做一些格林函数张量（Green&amp;rsquo;s Function）的计算。现在还是 Follow Zhao et al., 2011的思路做这方面的工</description>
+    </item>
+    
+  </channel>
+</rss>
