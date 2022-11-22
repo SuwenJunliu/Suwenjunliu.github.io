@@ -15,7 +15,7 @@
 
 他们可以使用 
 
-```
+``` bash
 sudo apt-get install autoconf lyx texlive-font-utils
 ```
 
@@ -25,14 +25,17 @@ sudo apt-get install autoconf lyx texlive-font-utils
 
 ## 具体流程
 
-```
+``` bash
 git clone https://github.com/geodynamics/mineos.git
 cd mineos
 autoreconf --install
 ./configure
+make
+make install
 ```
 
-就可以完成安装了。
+就可以完成编译了。别忘了将 ./bin 文件夹的路径添加到 PATH 中。
+
 
 ### 可能的一些问题
 
@@ -75,7 +78,7 @@ Error: Cannot convert file
 > \<policy domain="coder" rights="read|write" pattern="PDF" />
     
 
-
+# Mineos的使用
 
 
 
